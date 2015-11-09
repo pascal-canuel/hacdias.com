@@ -33,7 +33,7 @@ So, if you let some blank lines after closing the PHP tag, you may get the error
 
 Of course I didn't forget the examples. So, let's begin. If the file **only contains PHP** code, you don't have to worry about the closing tag. Simply don't use it.
 
-{{< highlight php >}}
+```php
 <?php
 
 $myString = 'MyString';
@@ -42,11 +42,11 @@ $myArr = [0, 'item', $myString];
 function my_function {
   //...
 }
-{{< /highlight >}}
+```
 
 And now, what if I want to **mix** PHP with HTML (which I highly don't recommend, it's a big mess)? But if you want to use both languages, you must **use** the closing that. If possible, avoid the blank spaces.
 
-{{< highlight php >}}
+```php
 <?php
 
 //...PHP code
@@ -59,11 +59,11 @@ And now, what if I want to **mix** PHP with HTML (which I highly don't recommend
 
   </body>
 </html>
-{{< /highlight >}}
+```
 
 If you want to intercalate PHP into HTML for simple scripts, you have to use both opening and closing tags. Of course, if the code goes **after** the closing of ```html``` tag, you don't need to close the PHP tag. See:
 
-{{< highlight php >}}
+```php
 <div>
   <?php
 
@@ -77,18 +77,18 @@ If you want to intercalate PHP into HTML for simple scripts, you have to use bot
 
 <?php
 // no need to close here
-{{< /highlight >}}
+```
 
 ## Be careful!
 
 When using both PHP and HTML in the same file, you must warrant that all of the functions which modify the HTTP headers are put *before* of any HTML output.
 
-{{< highlight php >}}
+```php
 <?php session_start(); ?>
 <html>
   <!-- No error will be generated  -->
 </html>
-{{< /highlight >}}
+```
 
 ## Your questions
 
@@ -96,7 +96,7 @@ Someone asked what would happen if a PHP file **without** the closing tag was in
 
 ```class.php```
 
-{{< highlight php >}}
+```php
 <?php
 
 $foo = "bar";
@@ -104,11 +104,11 @@ $foo = "bar";
 function MyFunc() {
   //...
 }
-{{< /highlight >}}
+```
 
 ```index.php```
 
-{{< highlight php >}}
+```php
 <?php
 
 include 'class.php'; // or require
@@ -118,6 +118,6 @@ include 'class.php'; // or require
 <html>
   <!-- ... -->
 </html>
-{{< /highlight >}}
+```
 
 The answer is **no** because after the inclusion of the file there is a closing tag. Everything after the closing tag is outputted to the browser as it is (if it doesn't include any server-side modifications). 
