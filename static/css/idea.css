@@ -231,21 +231,17 @@ code {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  height: 100%;
   z-index: 9999999;
   -webkit-transition: .5s cubic-bezier(0.46, 0.03, 0.52, 0.96) all;
   transition: .5s cubic-bezier(0.46, 0.03, 0.52, 0.96) all;
-  -webkit-transform: translateY(-100%) translateY(3em);
-  -ms-transform: translateY(-100%) translateY(3em);
-  transform: translateY(-100%) translateY(3em);
-}
-.site-navigation.animate {
-    animation: example 2s infinite;
+  -webkit-transform: translateX(-17em);
+  -ms-transform: translateX(-17em);
+  transform: translateX(-17em);
 }
 #nav-toggle {
   display: inline-block;
   vertical-align: super;
-  padding: 1px;
 }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
@@ -291,17 +287,21 @@ code {
 }
 .site-navigation .content {
   padding: 2em;
+  height: 100%;
+  width: 17em;
 }
 .site-navigation .title {
+  position: absolute;
+  left: 17em;
+  top: 2em;
   background-color: #151515 !important;
   width: 10em;
   margin: 0 auto;
   height: 2.5em;
   line-height: 2.5em;
-  text-align: center;
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
-  cursor: pointer;
+  padding: 0 .5em;
+  display: flex;
+  justify-content: space-between;
 }
 .site-navigation .title .items {
 
@@ -365,9 +365,9 @@ display: inline-block;}
   content: '';
 }
 .site-navigation .division {
-  width: 33.33%;
+  width: 100%;
   display: inline-block;
-  vertical-align: top;
+  margin-bottom: 1em;
 }
 
 /* FOOTER */
@@ -892,12 +892,4 @@ form input[type="button"]:hover, form input[type="submit"]:hover {
   .division nav li {
     margin: .3em 0;
   }
-}
-
-@keyframes example {
-    0% {transform: translateY(-100%) translateY(3em)}
-    25% {transform: translateY(-95%) translateY(3em)}
-    50% {transform: translateY(-100%) translateY(3em)}
-    75% {transform: translateY(-98%) translateY(3em)}
-    100% {transform: translateY(-100%) translateY(3em)}
 }
