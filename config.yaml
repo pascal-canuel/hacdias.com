@@ -1,33 +1,27 @@
-baseurl: 'https://hacdias.com/'
-disqusShortname: hacdias
+﻿baseurl: 'https://pascalcanuel.com/'
 languageCode: en
 paginate: 10
 pluralizelisttitles: false
 removePathAccents: true
-title: Henrique Dias (@hacdias)
+title: Pascal Canuel
 pygmentsStyle: github
 summarylength: 30
 
 params:
   Analytics: 59697241-1
   Description: >-
-    I study Information Systems and Computer Engineering at Instituto Superior Técnico.
-    Digging into the decentralized web with IPFS.
-  image: images/lamps.jpg
+    I study Computer Science at the Cégep de Lévis-Lauzon.
+  image: images/mountain.jpg
   Author:
-    Email: hacdias@gmail.com
-    image: henrique.jpg
+    Email: pascalcanuel@hotmail.com
+    image: pascal.jpg
     JobTitle: Developer
-    Name: Henrique Dias
+    Name: Pascal Canuel
   Social:
-    Facebook: hacdias
-    GitHub: hacdias
-    Instagram: hacdias
-    LinkedIn: hacdias
-    Twitter: hacdias
-  Webmaster:
-    Bing: B471CBBC9EF6900039C6BBF251EF277C
-    Google: nVQ4_x6m6ZTRAzclMPNxpB0iMgK-xoIj_d-l85u32nY
+    Facebook: pascal
+    GitHub: pascal
+    LinkedIn: pascal
+    Twitter: pascal
 
 menu:
   main:
@@ -35,7 +29,7 @@ menu:
       weight: 1
       identifier: about
       pre: 🧑
-      url: /about/
+      url: /
     - name: Writing
       weight: 2
       pre: 📰
@@ -44,24 +38,24 @@ menu:
       weigth: 3
       pre: 📦
       url: /projects/
-    - name: PGP Key
-      weight: 4
-      pre: 🔑
-      url: https://keybase.io/hacdias/pgp_keys.asc?fingerprint=4dc16358711be325fb3633cf2e80d38374cd55aa
+    - name: Resume
+      weigth: 4
+      pre: 📄
+      url: /resumepascalcanuel.pdf
   social:
     - name: Email
       weight: 1
       pre: 📧
-      url: mailto:hacdias@gmail.com
+      url: mailto:pascalcanuel@hotmail.com
     - name: GitHub
       weight: 2
       pre: 👨‍💻
-      url: https://github.com/hacdias
+      url: https://github.com/pascal-canuel
     - name: Twitter
-      weigth: 3
+      weight: 3
       pre: 🕊️
-      url: https://twitter.com/hacdias
-    - name: Instagram
+      url: https://twitter.com/pascalcanuel
+    - name: Linkedin
       weight: 4
-      pre: 📷
-      url: https://instagram.com/hacdias
+      pre: 🗣 
+      url: https://www.linkedin.com/in/pascal-canuel/
