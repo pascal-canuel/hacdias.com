@@ -7,4 +7,4 @@ installation.
 start.
 `hugo server -D`
 
-navigate to the site [http://localhost:1313/]
+navigate to the site [http://localhost:1313/]()
